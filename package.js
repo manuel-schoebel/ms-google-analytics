@@ -10,5 +10,5 @@ Package.on_use(function (api) {
   if(api.export){
     api.export('GAnalytics', 'client');
   }
-  api.add_files("ga.js", ["client"]);
+  api.add_files("ganalytics.coffee", ["client"]);
 });
