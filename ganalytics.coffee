@@ -28,8 +28,8 @@ GAnalytics =
 @GAnalytics = GAnalytics
 
 if Meteor.settings and Meteor.settings.public and Meteor.settings.public.ganalytics and Meteor.settings.public.ganalytics.key
-  load(window, document, 'script', '//www.google-analytics.com/analytics.js','ga')  
-  
+  load(window, document, 'script', '//www.google-analytics.com/analytics.js','ga')
+
   gaSettings = Meteor.settings.public.ganalytics
   gaConfig = {}
   gaConfig.cookieName = gaSettings.cookieName unless _.isUndefined(gaSettings.cookieName)
